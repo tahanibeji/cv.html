@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="cv.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Curriculum Vitae of Tahani Beji, Web Developer.">
   <title>Tahani Beji – Web Developer | CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <header>
     <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#about">About</a></li>
+      <ul class="nav">
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -19,58 +21,75 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <img src="img.png.JPG" alt="Portrait of Tahani Beji" width="150" height="200">
-    <h1>Tahani Beji</h1>
-    <p>Web Developer</p>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate web developer with experience in building responsive and user-friendly websites. I enjoy learning new technologies and improving my skills.</p>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="label">Welcome to my CV</p>
+        <h1>I'm Tahani Beji<br>A <span class="highlight">Web Developer</span></h1>
+        <p class="muted">I am a passionate web developer with experience in building responsive and user-friendly websites. I enjoy learning new technologies and improving my skills.</p>
+        <p class="find-me">Find me on</p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/tahanibji/" target="_blank" rel="noopener noreferrer" aria-label="instagram">in</a></li>
+          <li><a href="mailto:tahani.beji@example.com" aria-label="Email">@</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-photo">
+        <img src="img.png.JPG" alt="Portrait of Tahani Beji" width="300" height="400">
+        <span class="photo-name" aria-hidden="true">TAHANI BEJI</span>
+      </div>
     </section>
 
-    <section id="education">
+    <!-- Education + Experience -->
+    <section class="block" id="education">
+      <p class="label">Learning</p>
       <h2>Education</h2>
-      <ul>
-        <li>
-          <h3>Master's Degree in Software Engineering</h3>
-          <p>University name – <time datetime="2022">2022</time></p>
-        </li>
-        <li>
-          <h3>Bachelor's Degree in Computer Science</h3>
-          <p>University name – <time datetime="2020">2020</time></p>
-        </li>
-      </ul>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Web Development Training</h3>
+          <p class="muted">GoMyCode-Certficate of training – <time datetime="2027">2027</time></p>
+        </article>
+        <article class="card">
+          <h3>Baccalaureate in Economics and Managment</h3>
+          <p class="muted">High school "SBS" – <time datetime="2026">2026</time></p>
+        </article>
+      </div>
     </section>
 
-    <section id="experience">
+    <section class="block" id="experience">
+      <p class="label">Work</p>
       <h2>Experience</h2>
-      <ul>
-        <li>
+      <div class="grid-2">
+        <article class="card">
           <h3>Web Developer – Company name</h3>
-          <p><time datetime="2023-01">Jan 2023</time> – Present</p>
-        </li>
-        <li>
+          <p class="muted"><time datetime="2027-01">Jan 2027</time> – Present</p>
+        </article>
+        <article class="card">
           <h3>Software Engineer – Company name</h3>
-          <p><time datetime="2021-01">Jan 2021</time> – <time datetime="2022-12">Dec 2022</time></p>
-        </li>
-      </ul>
+          <p class="muted"><time datetime="2027-01">Jan 2027</time> – <time datetime="2027-12">Dec 2027</time></p>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills -->
+    <section class="block" id="skills">
+      <p class="label">What I use</p>
       <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+      <ul class="stats">
+        <li class="stat"><strong>HTML</strong><span class="muted">Structure</span></li>
+        <li class="stat"><strong>CSS</strong><span class="muted">Styling</span></li>
+        <li class="stat"><strong>JavaScript</strong><span class="muted">Interaction</span></li>
       </ul>
     </section>
 
-    <section id="languages">
+    <!-- Languages -->
+    <section class="block" id="languages">
+      <p class="label">Communication</p>
       <h2>Languages</h2>
-      <ul>
+      <ul class="chips">
         <li>English</li>
         <li>French</li>
         <li>Arabic</li>
@@ -78,29 +97,31 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section class="block" id="contact">
+      <p class="label">Get in touch</p>
       <h2>Contact</h2>
-      <address>
-        <ul>
-          <li>Email: <a href="mailto:tahani.beji@example.com">tahani.beji@example.com</a></li>
-          <li>Phone: <a href="tel:+21656414356">+216 56 414 356</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/tahani-beji" target="_blank" rel="noopener noreferrer">tahani-beji</a></li>
-          <li>Location: Zaghouan Governorate, Tunisia</li>
-        </ul>
-      </address>
-
-      <h3>Let's work together on your next project</h3>
-      <p><a href="mailto:tahani.beji@example.com">Contact Me</a></p>
-    </section>
-
-    <section id="cv">
-      <h2>Download my CV</h2>
-      <p><a href="Bewerbungsunterlagen_Tahani_Beji.pdf" download>Download CV (PDF)</a></p>
+      <div class="card contact-card">
+        <address>
+          <ul>
+            <li>Email: <a href="mailto:tahani.beji@example.com">tahani.beji@example.com</a></li>
+            <li>Phone: <a href="tel:+21656414356">+216 56 414 356</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/tahani-beji" target="_blank" rel="noopener noreferrer">tahani-beji</a></li>
+            <li>Location: Zaghouan Governorate, Tunisia</li>
+          </ul>
+        </address>
+        <h3>Let's work together on your next project</h3>
+        <div class="actions">
+          <a class="btn" href="mailto:tahani.beji@example.com">Contact me</a>
+          <a class="btn btn-outline" href="Bewerbungsunterlagen_Tahani_Beji.pdf" download>Download CV (PDF)</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Tahani Beji. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
